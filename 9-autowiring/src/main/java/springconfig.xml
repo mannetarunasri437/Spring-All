@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="b" class="com.mvn._autowiring.FirstBean" autowire="constructor">
+			<!--<constructor-arg ref="a"></constructor-arg>-->
+
+		
+	</bean>
+	<bean id="secondBean" class="com.mvn._autowiring.SecondBean">
+		
+	</bean>
+	<!--
+	<bean id="a" class="com.mvn._autowiring.SecondBean">
+		
+		<constructor-arg value="1"></constructor-arg>
+				<constructor-arg value="tharuna"></constructor-arg>
+		<property name="id" value="1"></property>
+		<property name="name" value="tharuna"></property>
+
+		
+
+		
+	</bean>-->
+</beans>

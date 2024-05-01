@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans.xsd">
+	 <bean id="product" class="com.mvn.DI_form_of_objects.ProductBean">
+		 <constructor-arg value="101"/>
+		 <constructor-arg value="mobile"/>
+		 <constructor-arg value="500000"/>
+		 <constructor-arg value="1"/>
+		 
+		 
+	 </bean>
+	<bean id="order" class="com.mvn.DI_form_of_objects.OrderBean">
+		<constructor-arg value="1"/>
+		<constructor-arg ref="product"/>
+		
+		
+		</bean>
+</beans>

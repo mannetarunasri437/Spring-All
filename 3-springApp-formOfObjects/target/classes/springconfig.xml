@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="address" class="com.mvn._springApp_formOfObjects.AddressBean">
+		<!--
+		<property name="houseNum" value="1-100/3"></property>
+		<property name="city" value="hyderabad"></property>
+		<property name="state" value="telangana"></property>
+		<property name="pincode" value="500030"></property>-->
+		
+		<constructor-arg value="1-100/3"></constructor-arg>
+		<constructor-arg value="hyderabad"></constructor-arg>
+		<constructor-arg value="telangana"></constructor-arg>
+		<constructor-arg value="50030"></constructor-arg>
+		
+		
+		
+	</bean>
+	<bean id="student" class="com.mvn._springApp_formOfObjects.StudentBean">
+		<!--
+		<property name="studentId" value="437"></property>
+		<property name="sname" value="tharuna"></property>
+		<property name="addressbean" ref="address"></property>-->
+		<constructor-arg value="122"></constructor-arg>
+				<constructor-arg value="tharuna"></constructor-arg>
+
+		<constructor-arg ref="address"></constructor-arg>
+		
+	</bean>
+</beans>
